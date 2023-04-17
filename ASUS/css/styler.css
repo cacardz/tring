@@ -1,0 +1,204 @@
+
+
+
+.card{
+  background: rgba( 255, 255, 255, 0.95 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 2px );
+  -webkit-backdrop-filter: blur( 2px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+    position: absolute;
+    top: 25%;
+    left: 40%;
+}
+
+.cardRegister{
+  background: rgba( 255, 255, 255, 0.95 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 2px );
+  -webkit-backdrop-filter: blur( 2px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+
+
+.loginbtn{
+    cursor: pointer;
+    position: absolute;
+    top: 80%;
+    right: 10%;
+}
+
+.toRegister{
+    position:relative;
+    bottom: -40px;
+}
+
+.gender{
+    cursor: pointer;
+    border-radius: 10px;
+    height: 55px;
+    width: 145px;
+    
+    border: 2px solid rgb(200, 200, 200);
+}
+
+/* From uiverse.io by @Maximinodotpy */
+.inputGroup {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 1em 0 1em 0;
+    max-width: 365px;
+    position: relative;
+  }
+  
+  .inputGroup input {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  .inputGroup label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(100, 100, 100);
+  }
+  
+  .inputGroup :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color: #eaeaea;
+    border-radius: 8px;
+  }
+  
+  .inputGroup :is(input:focus, input:valid) {
+    border-color: rgb(150, 150, 200);
+  }
+
+
+.grid-firstname { grid-area: firstname; }
+.grid-middleInitial { grid-area: middleInitial; }
+.grid-lastname { grid-area: lastname; }
+.grid-username { grid-area: username; }
+.grid-password { grid-area: password; }
+.grid-cpassword { grid-area: cpassword; }
+.grid-gender { grid-area: gender; }
+.grid-address { grid-area: address; }
+.grid-button { grid-area: button; }
+.grid-a { grid-area: a; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'firstname firstname middleInitial middleInitial lastname lastname'
+    'username username password password cpassword cpassword'
+    'gender address address address address button'
+    'a a a a a a';
+  gap: 10px;
+  padding: 10px;
+}
+
+/* From uiverse.io by @satyamchaudharydev */
+button {
+    cursor: pointer;
+    margin-top: 15px;
+    margin-right: -6px;
+    --primary-color: #645bff;
+    --secondary-color: #fff;
+    --hover-color: #111;
+    --arrow-width: 20px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 10px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+  }
+  
+  button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  button:hover {
+    background-color: var(--hover-color);
+  }
+  
+  button:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  button:hover .arrow:before {
+    right: 0;
+  }
+  .grid-login-button{
+    height: 50px;
+    width: 185px;
+  }
+
+  
+  .passwordInput {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.displayBadge {
+    margin-top: 5%;
+    display: none;
+    text-align: center;
+    border-radius: 5px;
+}
+.errorMessage{
+  margin-top: 5%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.disabledInput{
+  cursor: not-allowed;
+}
